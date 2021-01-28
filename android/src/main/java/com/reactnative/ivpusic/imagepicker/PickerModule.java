@@ -341,7 +341,7 @@ class PickerModule extends ReactContextBaseJavaModule implements ActivityEventLi
             final Intent galleryIntent = new Intent(Intent.ACTION_GET_CONTENT);
 
             if (cropping || mediaType.equals("photo")) {
-                galleryIntent.setType("image/jpg, image/png");
+                galleryIntent.setType("image/jpg");
                 if (cropping) {
                     String[] mimetypes = {"image/jpeg", "image/png"};
                     galleryIntent.putExtra(Intent.EXTRA_MIME_TYPES, mimetypes);
